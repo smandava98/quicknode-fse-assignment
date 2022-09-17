@@ -47,7 +47,7 @@ I'm assuming this is user authentication to view particular NFTs:
 
 We can check if a particular NFT is within that user's access list and verify that way. 
 
-The kind of API I would use is a GraphQL API. REST APIs are known to underfetch/overfetch which can be problematic especially since, from my personal observations, top NFT collections seem to change frequently. If I want to see say top 20 collections, I don't want to get less than that or even more tha. 
+The kind of API I would use is a GraphQL API. REST APIs are known to underfetch/overfetch which can be problematic especially since, from my personal observations, top NFT collections seem to change frequently. If I want to see say top 20 collections, I don't want to get less than that or even more that. 
 
 Also GraphQL allows schema stitching which can be pretty important especially if, regarding an NFT, there may be multiple APIs for different components of an NFT. We can easily merge schemas to make things even more accessible for the client. 
 
