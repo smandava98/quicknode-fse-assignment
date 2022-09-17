@@ -57,7 +57,7 @@ The next two optimizations will rely on optimizing our DB and our API.
 
 Since this service is read-heavy, we can go even further and scale out our database layer via sharding. There might be hotspots if it is all in one DB, so we can split up the DB based on a hash so each machine (or cluster of them) can read their own database. 
 
-The last portion of the system is allowing it to send real-time updates to clients as new data is available. My first though is to use periodic polling at a specific time interval - howevever, this might cause issues especially for the scale of our service. A better approach would be long polling. Long polling is the simplest way of having persistent connection with a server without using specific protocols like WebSocket, etc. We could also utilize a Pub Sub system (though I warn: this might be a tad bit overkill) so that certain users can subscribe to certain collection-related topics and we can stream updates to those users. However, we can get away with simple long polling for now.
+The last portion of the system is allowing it to send real-time updates to clients as new data is available. My first thought is to use periodic polling at a specific time interval - howevever, this might cause issues especially for the scale of our service. A better approach would be long polling. Long polling is the simplest way of having persistent connection with a server without using specific protocols like WebSocket, etc. We could also utilize a Pub Sub system (though I warn: this might be a tad bit overkill) so that certain users can subscribe to certain collection-related topics and we can stream updates to those users. However, we can get away with simple long polling for now.
 
 
 
