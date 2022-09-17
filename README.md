@@ -25,4 +25,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - wagmi from Coinbase (to connect to Metamask)
 
 ## Walkthrough
-You can connect with Metamask to view the trending NFT Collections. See below video:
+You can connect with Metamask to view the trending NFT Collections. You can view the GraphQL query I used from icy.tools under the graphql folder. See below video:
