@@ -12,8 +12,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-** Note: Please create a file ".env.local" in the root directory and add the following:
-API_KEY={YOUR_QUICKNODE_API_KEY_HERE} **
+### Note: Please create a file ".env.local" in the root directory and add the following: API_KEY={YOUR_QUICKNODE_API_KEY_HERE} 
 
 ## Technologies Used
 - Next.js
