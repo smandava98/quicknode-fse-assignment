@@ -57,7 +57,7 @@ The next two optimizations will rely on optimizing our DB and our API.
 
 Since this service is read-heavy, we can go even further and scale out our database layer via sharding. There might be hotspots if it is all in one DB, so we can split up the DB based on a hash so each machine (or cluster of them) can read their own database. 
 
-The last portion of the system is allowing it to send real-time updates to clients as new data is available. We could use HTTP polling to poll the server at a specific time interval. We could also utilize a Pub Sub system (though I warn: this might be a tad bit overkill) so that certain users can subscribe to certain collection-related topics and we can stream updates to those users. However, we can get away with simple HTTP polling for now. 
+The last portion of the system is allowing it to send real-time updates to clients as new data is available. We could use long polling to poll the server at a specific time interval. We could also utilize a Pub Sub system (though I warn: this might be a tad bit overkill) so that certain users can subscribe to certain collection-related topics and we can stream updates to those users. However, we can get away with simple long polling for now since its also the simplest way to establish a connection to a server without using specific protcols like WebSocket, etc.
 
 
 
