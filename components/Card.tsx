@@ -12,25 +12,20 @@ const Card = ({ node }: CardProps) => {
             <React.Fragment>
                 <div className="font-bold text-xl">{node.name}</div>
               <CardContent>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                <strong>Average: </strong>
-                    {average}
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                <strong>Ceiling: </strong>
-                    {ceiling}
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                <strong>Floor: </strong>
-                    {floor}
+                <Typography variant="body2">
+                Average: {average}
                 </Typography>
                 <Typography variant="body2">
-                <strong>Total Sales: </strong>
-                    {totalSales}
+                Ceiling: {ceiling}
                 </Typography>
                 <Typography variant="body2">
-                <strong>Volume: </strong>
-                    {volume}
+                Floor: {floor}
+                </Typography>
+                <Typography variant="body2">
+                Total Sales: {totalSales}
+                </Typography>
+                <Typography variant="body2">
+                Volume: {volume}
                 </Typography>
               </CardContent>
             </React.Fragment>   
